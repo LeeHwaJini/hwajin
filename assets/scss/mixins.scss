@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+// @type display
+@mixin display(
+  $style: null,
+  $align: null,
+  $justify: null,
+  $gap: null,
+  $wrap: null
+) {
+  display: $style;
+
+  @if ($align != null and $align != "") {
+    align-items: $align;
+  }
+
+  @if ($justify != null and $justify != "") {
+    justify-content: $justify;
+  }
+
+  @if ($gap != null) {
+    gap: $gap;
+  }
+
+  @if ($style == flex) {
+    flex-wrap: $wrap;
+  }
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//@type display grid
+@mixin grid($style: grid, $columns: null, $gap: null, $place: null) {
+  display: $style;
+  grid-template-columns: $columns;
+
+  @if ($gap != null) {
+    gap: $gap;
+  }
+
+  @if ($place != null) {
+    place-items: $place;
+  }
+}
+
+// @type transition
+@mixin transition(
+  $property: all,
+  $duration: 0.3s,
+  $timing: ease-out,
+  $delay: null
+) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+  transition-delay: $delay;
+
+  @if ($delay==null) {
+    transition-delay: unset;
+  }
+}
+
+// @type text
+@mixin ellipsis($line: null, $height: auto, $lineHeight: inherit) {
+  @if ($line==null) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    overflow: hidden;
+    height: $height;
+    text-overflow: ellipsis;
+    line-height: $lineHeight;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+  }
+}
+
+// fontface
+@mixin fontface(
+  $font-name,
+  $fontface-prefix,
+  $type,
+  $extension,
+  $format,
+  $weight,
+  $style,
+  $unicode
+) {
+  @font-face {
+    font-family: $font-name;
+    src: local("#{$font-name} #{$type}"), local("#{$fontface-prefix}-#{$type}"),
+      url("@assets/fonts/#{$fontface-prefix}-#{$type}.#{$extension}")
+        format($format);
+    font-weight: $weight;
+    font-style: $style;
+    unicode-range: $unicode;
+  }
+}
+
+// 한글
+@mixin Pretendard-fontface($type, $weight, $style) {
+  @include fontface(
+    "Pretendard",
+    "Pretendard",
+    $type,
+    "woff",
+    "woff",
+    $weight,
+    $style,
+    "U+AC00-D7A3"
+  );
+}
+//영문, 숫자, 특수문자
+@mixin Montserrat-fontface($type, $weight, $style) {
+  @include fontface(
+    "Montserrat",
+    "Montserrat",
+    $type,
+    "ttf",
+    "truetype",
+    $weight,
+    $style,
+    "U+0041-005A, U+0061-007A, U+0030-0039 U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E"
+  );
+}
+
+//영문, 숫자, 특수문자
+@mixin Poppins-fontface($type, $weight, $style) {
+  @include fontface(
+    "Poppins",
+    "Poppins",
+    $type,
+    "ttf",
+    "truetype",
+    $weight,
+    $style,
+    "U+0041-005A, U+0061-007A, U+0030-0039 U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E"
+  );
+}

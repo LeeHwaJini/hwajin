@@ -1,0 +1,16 @@
+.ico {
+  display: block;
+  cursor: pointer;
+}
+
+.ico.github {
+  width: $icon2XLarge;
+  height: $icon2XLarge;
+  background: url("../images/icon/ico_github.png") no-repeat center center/cover;
+}
+
+.ico.link {
+  width: $icon2XLarge;
+  height: $icon2XLarge;
+  background: url("../images/icon/ico_link.png") no-repeat center center/cover;
+}

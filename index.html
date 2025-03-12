@@ -1,11 +1,394 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hwajin</title>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Draggable.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <section class="section h-full banner-section">
+        <img src="./assets/images/banner.png" alt="banner" class="img-cover" />
+      </section>
+
+      <section class="section h-full scroll-text-section">
+        <div class="bg-area"></div>
+        <h1 class="text">Responsibility<span>책임감</span></h1>
+        <h1 class="text">Diligence<span>성실함</span></h1>
+        <h1 class="text">Sense<span>감각</span></h1>
+        <h1 class="text">Learning<span>배움</span></h1>
+        <h1 class="text">A constant challenge<span>끊임없는 도전</span></h1>
+      </section>
+
+      <section class="section h-full portfolio-section">
+        <ul class="portfolio-list">
+          <li data-splitting="01" class="item riman">
+            <div class="text-area">
+              <h2 class="title">리만코리아</h2>
+              <p class="sub-text">리만코리아 사이트 퍼블리싱</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>반응형 WEB</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>100%</dd>
+
+                <dt>DATE</dt>
+                <dd>2024-04 ~ 2024-12</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="poppins">VUE, QUASAR , SCSS</dd>
+              </dl>
+
+              <div class="icon-area">
+                <a href="https://github.com/LeeHwaJini/riman" target="_blank"
+                  ><i class="ico github"></i
+                ></a>
+                <a href="https://kr.riman.com/" target="_blank"
+                  ><i class="ico link"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="02" class="item medical-center">
+            <div class="text-area">
+              <h2 class="title">이화의료원</h2>
+              <p class="sub-text">이화의료원 APP 퍼블리싱</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>APP</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>50%</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-01 ~ 2023-0</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="poppins">ReactNative , CSS, Javascript</dd>
+              </dl>
+
+              <div class="icon-area">
+                <a
+                  href="https://github.com/LeeHwaJini/EwhaMedicalCenter/tree/main"
+                  target="_blank"
+                  ><i class="ico github"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="03" class="item dari">
+            <div class="text-area">
+              <h2 class="title">DARI</h2>
+              <p class="sub-text">마케팅 통합 툴 DARI 퍼블리싱</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>WEB</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>90%</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-08 ~ 2023-08</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="poppins">HTML , CSS, Jquery</dd>
+              </dl>
+
+              <div class="icon-area">
+                <a href="https://github.com/LeeHwaJini/DARI" target="_blank"
+                  ><i class="ico github"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="04" class="item loftshop">
+            <div class="text-area">
+              <h2 class="title">로프트샵</h2>
+              <p class="sub-text">로프트샵 사이트 리뉴얼</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>PC WEB, MO WEB</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>100%</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-10 ~ 2023-10</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="">고도몰</dd>
+              </dl>
+
+              <div class="icon-area">
+                <a href="https://www.loftshop.co.kr/" target="_blank">
+                  <i class="ico link"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="05" class="item eg">
+            <div class="text-area">
+              <h2 class="title">말레EG</h2>
+              <p class="sub-text">말레이시아 영어캠프 모집 사이트</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>반응형 WEB</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>디자인 및 퍼블리싱 100%, 프론트엔드 95%</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-10 ~ 2023-10</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="poppins">HTML , CSS, Javascript</dd>
+              </dl>
+
+              <div class="icon-area">
+                <a href="https://github.com/LeeHwaJini/MaleEG" target="_blank"
+                  ><i class="ico github"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="06" class="item topper">
+            <div class="text-area">
+              <h2 class="title">Wonny Topper</h2>
+              <p class="sub-text">이벤트 공간 장식 업체 사이트</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>반응형 WEB</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>디자인 및 퍼블리싱 100%, 프론트엔드 95%</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-07 ~ 2023-09</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="poppins">HTML , CSS, Javascript</dd>
+              </dl>
+
+              <div class="icon-area">
+                <a
+                  href="https://github.com/LeeHwaJini/WonnyTopper"
+                  target="_blank"
+                  ><i class="ico github"></i
+                ></a>
+                <a href="https://web.wonnytopper.co.kr/" target="_blank">
+                  <i class="ico link"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="07" class="item inus">
+            <div class="text-area">
+              <h2 class="title">이누스 프렌즈몰</h2>
+              <p class="sub-text">이누스프렌즈몰 UX/UI 개선 작업 운영</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>PC WEB, MO WEB</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-07 ~ 2024-02</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="">카페24</dd>
+              </dl>
+
+              <div class="icon-area">
+                <a
+                  href="https://ifmall.co.kr/?srsltid=AfmBOopqVHSqM3lpYoorNz57Bs_FuwaovmU5961b_5UNpX_F6ZKRukLv"
+                  target="_blank"
+                >
+                  <i class="ico link"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li data-splitting="08" class="item inus">
+            <div class="text-area">
+              <h2 class="title">Better&</h2>
+              <p class="sub-text">Better& UX/UI 개선 작업 운영</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>반응형 WEB</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-12 ~ 2024-03</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="">워드프레스</dd>
+              </dl>
+
+              <div class="icon-area">
+                <a href="https://bettern.kr/" target="_blank">
+                  <i class="ico link"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section skill-section">
+        <div class="center">
+          <div id="cardItemArea" class="items">
+            <div class="item">
+              <div class="card type01">
+                <dl class="text-list">
+                  <dt>HTML</dt>
+                  <dd>
+                    SEO작성과 Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수
+                    있습니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type03">
+                <dl class="text-list">
+                  <dt>CSS</dt>
+                  <dd>
+                    다양한 선택자와 속성을 활용하여 반응형 디자인을 구현할 수
+                    있습니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type04">
+                <dl class="text-list">
+                  <dt>SCSS</dt>
+                  <dd>
+                    변수와 믹스인, 반복문을 활용하여 반응형 디자인을 구현할 수
+                    있습니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type07">
+                <dl class="text-list">
+                  <dt>Vue</dt>
+                  <dd>컴포넌트 기반으로 레이아웃 구성 할 수 있습니다.</dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type01">
+                <dl class="text-list">
+                  <dt>ReactNative</dt>
+                  <dd>컴포넌트 기반으로 레이아웃 구성 할 수 있습니다.</dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type05">
+                <dl class="text-list">
+                  <dt>Javascript</dt>
+                  <dd>
+                    다양한 라이브러리를 활용하여 기능 구현 및 API 연동 경험이
+                    있습니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type06">
+                <dl class="text-list">
+                  <dt>Jquery</dt>
+                  <dd>
+                    다양한 라이브러리를 활용하여 기능 구현 및 API 연동 경험이
+                    있습니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type07">
+                <dl class="text-list">
+                  <dt>INTERACTION</dt>
+                  <dd>
+                    GSAP라이브러리를 이용해 INTERACTION 기능을 구현한 경험이
+                    있습니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type02">
+                <dl class="text-list">
+                  <dt>Figma</dt>
+                  <dd>
+                    협업툴을 Figma를 사용해서 퍼블리싱을 구현한 경험이 있습니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type08">
+                <dl class="text-list">
+                  <dt>Zeplin</dt>
+                  <dd>
+                    협업툴을 Zeplin을 사용해서 퍼블리싱을 구현한 경험이
+                    있습니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type10">
+                <dl class="text-list">
+                  <dt>Illustrator</dt>
+                  <dd>펜툴을 통해 간단한 일러스트를 만들 수 있습니다.</dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type05">
+                <dl class="text-list">
+                  <dt>Platform</dt>
+                  <dd>
+                    고도몰, 카페24, 워드프레스를 통해 UI개선 및 리뉴얼 경험이
+                    있습니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+  </body>
 </html>

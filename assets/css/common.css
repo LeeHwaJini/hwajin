@@ -1,0 +1,542 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Pretendard";
+  src: local("Pretendard ExtraLight"), local("Pretendard-ExtraLight"), url("@assets/fonts/Pretendard-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  unicode-range: "U+AC00-D7A3";
+}
+@font-face {
+  font-family: "Pretendard";
+  src: local("Pretendard Light"), local("Pretendard-Light"), url("@assets/fonts/Pretendard-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: "U+AC00-D7A3";
+}
+@font-face {
+  font-family: "Pretendard";
+  src: local("Pretendard Regular"), local("Pretendard-Regular"), url("@assets/fonts/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: "U+AC00-D7A3";
+}
+@font-face {
+  font-family: "Pretendard";
+  src: local("Pretendard Medium"), local("Pretendard-Medium"), url("@assets/fonts/Pretendard-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: "U+AC00-D7A3";
+}
+@font-face {
+  font-family: "Pretendard";
+  src: local("Pretendard SemiBold"), local("Pretendard-SemiBold"), url("@assets/fonts/Pretendard-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  unicode-range: "U+AC00-D7A3";
+}
+@font-face {
+  font-family: "Pretendard";
+  src: local("Pretendard Bold"), local("Pretendard-Bold"), url("@assets/fonts/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: "U+AC00-D7A3";
+}
+@font-face {
+  font-family: "Pretendard";
+  src: local("Pretendard Black"), local("Pretendard-Black"), url("@assets/fonts/Pretendard-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  unicode-range: "U+AC00-D7A3";
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat ExtraLight"), local("Montserrat-ExtraLight"), url("@assets/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  unicode-range: "U+0041-005A, U+0061-007A, U+0030-0039 U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E";
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("@assets/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: "U+0041-005A, U+0061-007A, U+0030-0039 U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E";
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("@assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: "U+0041-005A, U+0061-007A, U+0030-0039 U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E";
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("@assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: "U+0041-005A, U+0061-007A, U+0030-0039 U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E";
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("@assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  unicode-range: "U+0041-005A, U+0061-007A, U+0030-0039 U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E";
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Regular"), local("Poppins-Regular"), url("@assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: "U+0041-005A, U+0061-007A, U+0030-0039 U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E";
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Medium"), local("Poppins-Medium"), url("@assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: "U+0041-005A, U+0061-007A, U+0030-0039 U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E";
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url("@assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  unicode-range: "U+0041-005A, U+0061-007A, U+0030-0039 U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E";
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Bold"), local("Poppins-Bold"), url("@assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: "U+0041-005A, U+0061-007A, U+0030-0039 U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E";
+}
+/*
+    ** color
+*/
+/* Font */
+.ico {
+  display: block;
+  cursor: pointer;
+}
+
+.ico.github {
+  width: 56px;
+  height: 56px;
+  background: url("../images/icon/ico_github.png") no-repeat center center/cover;
+}
+
+.ico.link {
+  width: 56px;
+  height: 56px;
+  background: url("../images/icon/ico_link.png") no-repeat center center/cover;
+}
+
+.cursor {
+  position: fixed;
+  width: 20px; /* 원하는 너비 */
+  height: 20px; /* 원하는 높이 */
+  background: #fe4e01; /* 원하는 색상 */
+  border-radius: 50%; /* 원형으로 만들기 */
+  pointer-events: none; /* 클릭 이벤트 무시 */
+  z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+.mouse__cursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 9999;
+  /* border: 2px solid #fff; */
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.mouse__cursor.active {
+  transform: scale(0);
+}
+
+.mouse__cursor2.active {
+  transform: scale(5);
+  background: rgba(255, 166, 0, 0.5);
+}
+
+.mouse__cursor2.active2 {
+  transform: scale(5);
+  background: rgba(94, 255, 0, 0.5);
+}
+
+.mouse__cursor2.active3 {
+  transform: scale(5);
+  background: rgba(0, 119, 255, 0.5);
+}
+
+/**/
+body {
+  margin: 0;
+  color: #fff;
+  background-color: #212121;
+  font-weight: 600;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+}
+.section.h-full {
+  height: 100vh;
+}
+
+.skill-section {
+  height: 100vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+.skill-section .center {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.skill-section .items {
+  display: flex;
+  transform-origin: center 150vh;
+  transform: rotate(0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.skill-section .item {
+  position: absolute;
+  transform: translateX(-50%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  aspect-ratio: 160/192;
+  background: #fff;
+  border-radius: 16px;
+  color: #212121;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: grab;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -4%;
+  width: 280px;
+  height: 280px;
+}
+.card.type01::before {
+  background: url("../images/skill/bg01.png") no-repeat center center/contain;
+}
+.card.type02::before {
+  background: url("../images/skill/bg02.png") no-repeat center center/contain;
+}
+.card.type03::before {
+  background: url("../images/skill/bg03.png") no-repeat center center/contain;
+}
+.card.type04::before {
+  background: url("../images/skill/bg04.png") no-repeat center center/contain;
+}
+.card.type05::before {
+  background: url("../images/skill/bg05.png") no-repeat center center/contain;
+}
+.card.type06::before {
+  background: url("../images/skill/bg06.png") no-repeat center center/contain;
+}
+.card.type07::before {
+  background: url("../images/skill/bg07.png") no-repeat center center/contain;
+}
+.card.type08::before {
+  background: url("../images/skill/bg08.png") no-repeat center center/contain;
+}
+.card.type09::before {
+  background: url("../images/skill/bg09.png") no-repeat center center/contain;
+}
+.card.type10::before {
+  background: url("../images/skill/bg10.png") no-repeat center center/contain;
+}
+.card.type11::before {
+  background: url("../images/skill/bg11.png") no-repeat center center/contain;
+}
+.card.type12::before {
+  background: url("../images/skill/bg12.png") no-repeat center center/contain;
+}
+.card .text-list {
+  z-index: 10;
+  position: relative;
+  padding: 36px 24px;
+}
+.card .text-list dt {
+  margin-bottom: 16px;
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.card .text-list dd {
+  line-height: 130%;
+  color: #858585;
+  font-size: 24px;
+}
+
+.scroll-text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4.2vw;
+}
+.scroll-text-section .bg-area {
+  z-index: 1;
+  position: absolute;
+  right: -8%;
+  bottom: 0px;
+  width: 600px;
+  height: 600px;
+  background: url("../images/skill/black_bg09.png") no-repeat center center/contain;
+}
+.scroll-text-section .text {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  line-height: 120%;
+  background: linear-gradient(to right, #e9ecef, #e9ecef) no-repeat;
+  background-clip: text;
+  background-size: 0%;
+  border-bottom: 1px solid #2f2b28;
+  color: rgba(182, 182, 182, 0.2);
+  font-size: 6vw;
+  font-family: "Poppins";
+  -webkit-background-clip: text;
+  transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+}
+.scroll-text-section .text span {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #0d0d0d;
+  -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+          clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all cubic-bezier(0.1, 0.5, 0.5, 1) 0.4s;
+}
+.scroll-text-section .text:hover > span {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.portfolio-section .portfolio-list {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.portfolio-section .portfolio-list li {
+  position: absolute;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  padding: 4.2vw;
+  border: 1px solid #ddd;
+}
+.portfolio-section .portfolio-list li:first-child {
+  right: 0;
+}
+.portfolio-section .portfolio-list li:nth-child(1) {
+  width: calc(100% - 4.2vw * (1 - 1));
+}
+.portfolio-section .portfolio-list li:nth-child(2) {
+  width: calc(100% - 4.2vw * (2 - 1));
+}
+.portfolio-section .portfolio-list li:nth-child(3) {
+  width: calc(100% - 4.2vw * (3 - 1));
+}
+.portfolio-section .portfolio-list li:nth-child(4) {
+  width: calc(100% - 4.2vw * (4 - 1));
+}
+.portfolio-section .portfolio-list li:nth-child(5) {
+  width: calc(100% - 4.2vw * (5 - 1));
+}
+.portfolio-section .portfolio-list li:nth-child(6) {
+  width: calc(100% - 4.2vw * (6 - 1));
+}
+.portfolio-section .portfolio-list li:nth-child(7) {
+  width: calc(100% - 4.2vw * (7 - 1));
+}
+.portfolio-section .portfolio-list li:nth-child(8) {
+  width: calc(100% - 4.2vw * (8 - 1));
+}
+.portfolio-section .portfolio-list li::after {
+  content: attr(data-splitting);
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  /* top: 8px; */
+  bottom: 3.33vw;
+  left: calc(1.665vw - 4px);
+}
+.portfolio-section .portfolio-list li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.portfolio-section .portfolio-list li.riman {
+  background: url("../images/portfoilo/portfoilo_riman.png") no-repeat center center/cover;
+}
+.portfolio-section .portfolio-list li.medical-center {
+  background: url("../images/portfoilo/portfoilo_medical_center.png") no-repeat center center/cover;
+}
+.portfolio-section .portfolio-list li.dari {
+  background: url("../images/portfoilo/portfoilo_dari.png") no-repeat center center/cover;
+}
+.portfolio-section .portfolio-list li.loftshop {
+  background: url("../images/portfoilo/portfoilo_loftshop.png") no-repeat center center/cover;
+}
+.portfolio-section .portfolio-list li.eg {
+  background: url("../images/portfoilo/portfolio_eg.png") no-repeat center center/cover;
+}
+.portfolio-section .portfolio-list li.topper {
+  background: url("../images/portfoilo/portfoilo_topper.png") no-repeat center center/cover;
+}
+.portfolio-section .portfolio-list li.inus {
+  background: url("../images/portfoilo/portfoilo_inus.png") no-repeat center center/cover;
+}
+.portfolio-section .portfolio-list li .text-area {
+  position: relative;
+  font-weight: 400;
+}
+.portfolio-section .portfolio-list li .text-area .title {
+  font-size: 3.25rem;
+  font-weight: 600;
+}
+.portfolio-section .portfolio-list li .text-area .title::before {
+  content: "|";
+  position: absolute;
+  top: 0px;
+  left: calc(-1.665vw - 16px);
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.portfolio-section .portfolio-list li .text-area .sub-text {
+  margin: 24px 0 56px 0;
+  color: #d2d2d2;
+  font-size: 2rem;
+}
+.portfolio-section .portfolio-list li .text-area .detail-text {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.portfolio-section .portfolio-list li .text-area .detail-text dt {
+  margin-bottom: 4px;
+  color: #d2d2d2;
+  font-size: 1rem;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.portfolio-section .portfolio-list li .text-area .detail-text dd {
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  word-break: keep-all;
+}
+
+.icon-area {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.poppins {
+  font-family: "Poppins";
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*
+* animation
+*/
+@keyframes flow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes scaleMotion {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
