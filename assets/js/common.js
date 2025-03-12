@@ -143,65 +143,11 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     } else {
       timeline.to(item, {
-        x: `-${window.innerWidth - 16}px`, // 화면 너비만큼 이동
+        x: `-${window.innerWidth}px`, // 화면 너비만큼 이동
         duration: 1,
         ease: "none",
       });
     }
   });
-
-  const skillData = [{
-      title: "HTML",
-      description: "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
-      type: "type01",
-    },
-    {
-      title: "CSS",
-      description: "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
-      type: "type03",
-    },
-    {
-      title: "SCSS",
-      description: "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
-      type: "type04",
-    },
-    {
-      title: "Javascript",
-      description: "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
-      type: "type05",
-    },
-    {
-      title: "Jquery",
-      description: "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
-      type: "type06",
-    },
-    {
-      title: "Vue",
-      description: "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
-      type: "type07",
-    },
-    {
-      title: "Figma",
-      description: "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
-      type: "type02",
-    },
-  ];
-
-  // const cardItemArea = document.querySelector("#cardItemArea");
-
-  // skillData.forEach((item) => {
-  //   cardItemArea.innerHTML += `
-  //   <div class="item">
-  //           <div class="card ${item.type}">
-  //             <dl class="text-list">
-  //               <dt>${item.title}</dt>
-  //               <dd>
-  //                 ${item.description}
-  //               </dd>
-  //             </dl>
-  //           </div>
-  //         </div>
-  //   `;
-  // });
 
 });
